@@ -1,0 +1,14 @@
+services:
+  proposal:
+    container_name: sp-vn-proposal
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8082:80"
+    networks:
+      - corepath_edge
+
+networks:
+  corepath_edge:
+    external: true
+    name: corepath_edge

@@ -1,0 +1,19 @@
+{
+  "name": "sp-vn-procurement-proposal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "@fontsource/manrope": "^5.2.8",
+    "@fontsource/newsreader": "^5.2.8"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
