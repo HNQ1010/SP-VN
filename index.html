@@ -10,6 +10,14 @@
     <title>Procurement System Proposal | Nguyen Quoc Hung</title>
   </head>
   <body>
+    <!--
+      THESIS: Procurement is an operating system, not an isolated spreadsheet; the page refuses the generic applicant-profile layout.
+      OWN-WORLD: Warm ledger paper, warehouse-control ink, safety-orange decisions, ruled process cells, editorial headlines, and instrument labels.
+      STORY: See the system to build, verify the operating evidence behind it, inspect proof of system-building ability, then begin with paid discovery.
+      FIRST VIEWPORT: A large implementation thesis leads on the left; an interactive Supplier→RFQ→PO→DC→KPI control sheet proves the mechanism on the right; the system-plan action sits beneath the thesis.
+      FORM: Procurement Control Ledger, fifth grounded direction, code-led; concept seed e393c53a.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+    -->
     <a class="skip-link" href="#main">Skip to proposal</a>
     <div class="scroll-meter" aria-hidden="true"><span></span></div>
 
@@ -32,7 +40,6 @@
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy" data-reveal>
-          <p class="proposal-meta">Proposal for Bilingual Sourcing &amp; Procurement Specialist · Vietnam</p>
           <h1>I can build the procurement system because I have operated what happens <em>after every purchase decision.</em></h1>
           <p class="hero-lead">For 12+ years, I have worked where supplier lead time, order accuracy, delivery planning, inventory, warehouse capacity, and retail availability meet. I combine that operating experience with the ability to turn real workflows into a working digital system.</p>
           <div class="hero-actions">
@@ -42,7 +49,6 @@
           <div class="availability" aria-label="Candidate details">
             <span>Based in Vietnam</span>
             <span>Vietnamese + working English</span>
-            <span>20–30 hours / week</span>
           </div>
         </div>
 
@@ -51,16 +57,16 @@
             <span>PROCUREMENT CONTROL PLAN</span>
             <span>VERSION 01</span>
           </div>
-          <div class="chain" role="list">
-            <button class="chain-node is-active" type="button" data-stage="source" role="listitem"><span>Supplier</span><small>Source + qualify</small></button>
+          <div class="chain" aria-label="Explore the proposed procurement stages">
+            <button class="chain-node is-active" type="button" data-stage="source"><span>Supplier</span><small>Source + qualify</small></button>
             <i aria-hidden="true"></i>
-            <button class="chain-node" type="button" data-stage="decide" role="listitem"><span>RFQ</span><small>Compare + approve</small></button>
+            <button class="chain-node" type="button" data-stage="decide"><span>RFQ</span><small>Compare + approve</small></button>
             <i aria-hidden="true"></i>
-            <button class="chain-node" type="button" data-stage="control" role="listitem"><span>PO</span><small>Control + follow up</small></button>
+            <button class="chain-node" type="button" data-stage="control"><span>PO</span><small>Control + follow up</small></button>
             <i aria-hidden="true"></i>
-            <button class="chain-node" type="button" data-stage="receive" role="listitem"><span>DC</span><small>Receive + reconcile</small></button>
+            <button class="chain-node" type="button" data-stage="receive"><span>DC</span><small>Receive + reconcile</small></button>
             <i aria-hidden="true"></i>
-            <button class="chain-node" type="button" data-stage="improve" role="listitem"><span>KPI</span><small>Measure + improve</small></button>
+            <button class="chain-node" type="button" data-stage="improve"><span>KPI</span><small>Measure + improve</small></button>
           </div>
           <div class="stage-detail" aria-live="polite">
             <span data-stage-label>01 · SUPPLIER FOUNDATION</span>
@@ -164,13 +170,30 @@
             </article>
           </div>
         </div>
+
+        <article class="local-advantage" data-reveal>
+          <div>
+            <h3>Embedded in the Long An industrial corridor.</h3>
+            <p>Long An sits within Vietnam’s Southern Key Economic Zone. Official investment-promotion data reports 26 industrial zones open to investment and 997 foreign-invested projects in those zones, with Taiwan and China among the investor origins holding high project counts.</p>
+            <p class="source-note">Market context: <a href="https://www.investvietnam.gov.vn/en/news--events.nd/attracting-investment-in-long-an-province%E2%80%99s-industrial-zones.html" rel="noreferrer">Vietnam Foreign Investment Agency</a>.</p>
+          </div>
+          <div>
+            <h4>Local context that supports execution</h4>
+            <p>My operating background includes managing local staff who understand the people, industrial communities, relationship practices, and working environment around Chinese-invested companies in the area.</p>
+            <ul>
+              <li>Practical communication with local suppliers and operating teams</li>
+              <li>Faster context-building for site visits and supplier follow-up</li>
+              <li>Awareness of local workforce expectations and relationship dynamics</li>
+              <li>Familiarity with Chinese-company operating environments in Vietnam</li>
+            </ul>
+          </div>
+        </article>
       </section>
 
       <section class="section builder-section">
         <div class="builder-intro" data-reveal>
-          <p class="builder-date">BUILT FROM THE FIRST COMMIT · JUNE 2024 → PRODUCTION</p>
           <h2>I have already turned warehouse operations into a working system.</h2>
-          <p>Work_app began as an internal operations tool and developed into a production Django/PostgreSQL workspace. It demonstrates the same capability this project needs: discover a real workflow, structure its data, build controls, test with users, and maintain it as requirements evolve.</p>
+          <p>Work_app began with its first commit in June 2024 and developed from an internal operations tool into a production Django/PostgreSQL workspace. It demonstrates the same capability this project needs: discover a real workflow, structure its data, build controls, test with users, and maintain it as requirements evolve.</p>
         </div>
 
         <div class="builder-console" data-reveal aria-label="Work_app capability map">
@@ -217,7 +240,6 @@
 
       <section class="closing" data-reveal>
         <div>
-          <p>NGUYEN QUOC HUNG · VIETNAM</p>
           <h2>Ready to build the operating system behind your procurement work.</h2>
         </div>
         <div class="closing-copy">

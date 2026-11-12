@@ -3,4 +3,5 @@ dist/
 .DS_Store
 .vite/
 .impeccable/review/
+.gateway-work/
 *.log

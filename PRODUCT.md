@@ -60,6 +60,11 @@ and a bounded implementation approach.
   WMS/ERP, SOPs, KPI governance, and process stabilization.
 - Managed an approximately 60,000 m² ambient and cold-chain 3PL operation serving Central Retail
   Vietnam, with 50+ staff, up to 18,000 pallets/day, and approximately 800 tons/day.
+- The candidate's operating base is the Long An industrial corridor in Vietnam's Southern Key
+  Economic Zone. Official investment-promotion data reports 26 industrial zones eligible to
+  receive investment and 997 foreign-invested projects in those zones; Taiwan and China are among
+  the investor origins with high project counts. The candidate has managed local staff familiar
+  with the area's people, relationship practices, and Chinese-invested working environments.
 - Managed a 10,000 m² Boxme fulfillment operation and helped recover a WMS-related backlog of more
   than 2,000 returned orders.
 - Lazada experience includes BI/data work and supervision of a roughly 7,000 m² sorting center at
