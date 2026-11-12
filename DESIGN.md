@@ -17,19 +17,19 @@ colors:
 typography:
   display:
     fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(49px, 5.8vw, 88px)"
+    fontSize: "clamp(46px, 5vw, 74px)"
     fontWeight: 500
     lineHeight: 0.94
     letterSpacing: "-0.04em"
   headline:
     fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "clamp(40px, 5vw, 72px)"
+    fontSize: "clamp(38px, 4.5vw, 64px)"
     fontWeight: 500
     lineHeight: 0.98
     letterSpacing: "-0.04em"
   title:
     fontFamily: "Newsreader, Georgia, serif"
-    fontSize: "31px"
+    fontSize: "28px"
     fontWeight: 600
     lineHeight: 1
     letterSpacing: "-0.03em"
@@ -102,7 +102,7 @@ components:
     backgroundColor: "transparent"
     textColor: "{colors.control-ink-soft}"
     padding: "32px"
-    height: "360px"
+    height: "270px"
 ---
 
 # Design System: Vietnam Procurement Control Ledger
@@ -113,7 +113,7 @@ components:
 
 The proposal treats procurement as an operating system recorded in a working control ledger, not as an isolated spreadsheet or a generic applicant profile. Warm paper, warehouse-control ink, safety-orange decisions, ruled cells, and instrument labels make the page feel authored for purchasing work: practical, auditable, and implementation-led.
 
-Editorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The first view pairs a large implementation thesis with an interactive Supplier → RFQ → PO → DC → KPI control sheet, then extends that same grammar through system cells, evidence registers, a dark builder console, phased delivery records, and a print-safe document mode.
+Editorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface pairs a compact implementation thesis with an interactive Supplier → RFQ → PO → DC → KPI control sheet, then extends that same grammar through short system cells, evidence registers, a dense dark builder console, phased delivery records, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.
 
 **Key Characteristics:**
 
@@ -122,7 +122,7 @@ Editorial Newsreader headlines carry the proposal and evidence; Manrope handles 
 - Editorial serif declarations paired with compact sans-serif instrument labels
 - Ruled matrices and registers instead of detached marketing cards
 - Interactive controls that remain complete as static content and in print
-- Responsive reduction from operating grids to one-column records
+- Responsive reduction that keeps high-value process and console records in two columns on mobile
 
 ## Colors
 
@@ -165,9 +165,9 @@ The palette combines warm archival paper with dark green-black control surfaces,
 
 ### Hierarchy
 
-- **Display** (500, `clamp(49px, 5.8vw, 88px)`, 0.94): The first-viewport implementation thesis; mobile holds a similarly forceful `45px–68px` range.
-- **Headline** (500, `clamp(40px, 5vw, 72px)`, 0.98): Section declarations, builder proof, and the closing proposition.
-- **Title** (600, `31px`, 1): Blueprint steps and delivery phases; evidence titles use responsive Newsreader sizes where operating scale leads.
+- **Display** (500, `clamp(46px, 5vw, 74px)`, 0.94): The compact first-viewport implementation thesis; mobile uses a shorter `41px–58px` range.
+- **Headline** (500, `clamp(38px, 4.5vw, 64px)`, 0.98): Section declarations and the closing proposition, deliberately capped below the hero.
+- **Title** (600, `28px`, 1): Blueprint steps; delivery phases use `31px`, while evidence titles scale only where operating proof leads.
 - **Body** (400, `16px`, 1.65): Proposal explanation and evidence, with dense cell copy stepping down to `12px–13px`.
 - **Label** (700–800, `8px–11px`, `0.08em–0.14em`, uppercase): Version labels, step codes, system state, metadata, and control headings.
 
@@ -177,11 +177,11 @@ The palette combines warm archival paper with dark green-black control surfaces,
 
 ## Layout
 
-The desktop shell is capped at `1440px` with `32px` viewport gutters through `min(1440px, calc(100vw - 64px))`. The header uses a centered three-part register: identity left, proposal navigation center, and the print control right. The hero fills the remaining first viewport and uses an asymmetric `1.05fr / 0.95fr` split, with the proposal thesis on the left and the rotated control sheet on the right.
+The desktop shell is capped at `1440px` with `32px` viewport gutters through `min(1440px, calc(100vw - 64px))`. The header is a compact `72px` centered three-part register: identity left, proposal navigation center, and the print control right. The hero no longer forces a full viewport; it uses `48px–76px` vertical padding, a `1.05fr / 0.95fr` split, and a `40px–72px` gap so the thesis and rotated control sheet remain decisive without manufacturing empty height. Hero lead, action, and availability gaps resolve at `22px`, `26px`, and `22px`.
 
-Sections use a large but disciplined `88px–160px` vertical cadence. Reusable structures include a two-column section heading, a three-column process matrix, a `1.2fr / 0.8fr` evidence register, a `0.75fr / 1.25fr` builder proof split, and a three-column delivery ledger. Shared borders and zero-gap grids make content read as connected records rather than a collection of cards.
+Sections use a tighter `64px–108px` vertical cadence, with `44px` between a section heading and its records. Reusable structures include a two-column section heading, a three-column process matrix of `270px` cells, a `1.2fr / 0.8fr` evidence register, a `0.75fr / 1.25fr` builder proof split, and a three-column delivery ledger. The closing field contracts to `68px–124px` vertical padding. Shared borders and zero-gap grids preserve the connected-record reading while materially reducing total page height.
 
-At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the control chain becomes five rectangular stage buttons, all operating grids stack, the evidence register becomes vertical, the save control becomes icon-only, and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, and compacts the proposal into a legible document.
+At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the hero uses `42px` vertical padding, the control chain becomes five rectangular stage buttons, and the process ledger deliberately remains two columns with `228px` cells and hidden output chips. The evidence register stacks but its supporting records compress to `165px`; the builder console keeps a two-column `108px` grid; delivery records stack at `215px`; and the closing field uses `58px` vertical padding. The save control becomes icon-only and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, and compacts the proposal into a legible document.
 
 ## Elevation & Depth
 
@@ -224,7 +224,7 @@ Components feel like purchasing controls and ledger entries: tactile enough to o
 - **Background:** Cells alternate between ledger paper, lightly lifted white, deep ledger paper, and warehouse-control ink according to chapter.
 - **Shadow Strategy:** Flat by default, following the Register Before Elevation Rule.
 - **Border:** One-pixel rules connect adjacent records; zero-gap grids preserve continuity.
-- **Internal Padding:** Compact controls use `14px–22px`; process records use `26px–34px`; lead evidence expands responsively to `36px–72px`.
+- **Internal Padding:** Compact controls use `14px–22px`; desktop process records use `26px`; lead evidence uses `32px–52px`; delivery records use `28px`.
 
 ### Navigation
 
@@ -236,15 +236,19 @@ The signature first-viewport artifact is a document-white sheet with an inset ru
 
 ### System Blueprint
 
-Six process cells share one ruled matrix and an orange progress rail. Each cell combines a teal step code, Newsreader title, concise explanation, and a bottom-aligned set of output chips. Alternating lifted cells add cadence without breaking the ledger.
+Six `270px` desktop process cells share one ruled matrix and an orange progress rail. Each cell combines a teal step code, `28px` Newsreader title, concise explanation, and a bottom-aligned set of output chips. Alternating lifted cells add cadence without breaking the ledger. Mobile preserves a two-column ledger at `228px` per cell, shortens titles to `22px`, and hides chips so the system remains scannable without extending the page unnecessarily.
 
 ### Evidence Register
 
-The evidence chapter reverses to warehouse-control ink. One lead record uses an oversized orange operating metric and a three-column definition list; three adjacent evidence records provide fulfillment, analytics, and high-volume proof. Rules—not detached cards—hold the register together.
+The evidence chapter reverses to warehouse-control ink. One compact `500px` lead record uses an oversized orange operating metric and a three-column definition list; three adjacent records use `24px–38px` padding for fulfillment, analytics, and high-volume proof. A ruled local-advantage register follows, separating direct evidence from transferable Vietnam procurement context. On mobile the lead becomes `510px`, supporting evidence compresses to `165px`, and local-advantage content stacks without abandoning its internal two-column list.
 
 ### Builder Console
 
-The private-system proof uses a near-black operations console with a paired capability grid and an orange flow path from Discover to Operate. It is the second and final elevated artifact, visually connecting the procurement proposal to demonstrated system-building practice.
+The private-system proof uses a near-black operations console with compact `118px` paired capability records and an orange flow path from Discover to Operate. Mobile retains the two-column console at `108px` per record instead of expanding it into a long single-column list. It is the second and final elevated artifact, visually connecting the procurement proposal to demonstrated system-building practice.
+
+### Delivery Ledger
+
+Three `310px` desktop phases connect paid discovery, working foundation, and pilot handover in one ruled row. Each record uses a large Newsreader index, teal phase label, compact explanation, and bottom-aligned output. Mobile stacks the sequence but reduces each phase to `215px`, preserving the implementation path while controlling page length.
 
 ### Named Rules
 
