@@ -412,6 +412,37 @@ h1 em { color: var(--orange-deep); font-weight: 500; }
 .delivery-plan p { margin: 0; color: var(--ink-soft); font-size: 13px; }
 .delivery-plan strong { margin-top: auto; padding-top: 24px; font-size: 11px; line-height: 1.5; }
 
+.application-answers { margin-top: 52px; border-top: 1px solid var(--line); }
+.answers-heading { padding: 38px 0 28px; display: grid; grid-template-columns: 1fr minmax(280px, 0.55fr); gap: 48px; align-items: end; }
+.answers-heading h3 { max-width: 16ch; margin: 0; font-family: var(--font-display); font-size: clamp(34px, 3.6vw, 50px); font-weight: 500; line-height: 0.98; letter-spacing: -0.035em; }
+.answers-heading p { max-width: 52ch; margin: 0; color: var(--ink-soft); font-size: 13px; }
+.answers-list { border-top: 1px solid var(--line); }
+.answers-list details { border-bottom: 1px solid var(--line); }
+.answers-list summary { min-height: 76px; padding: 0 18px; display: grid; grid-template-columns: 48px 1fr 28px; gap: 18px; align-items: center; list-style: none; cursor: pointer; transition: background 180ms ease; }
+.answers-list summary::-webkit-details-marker { display: none; }
+.answers-list summary:hover,
+.answers-list details[open] summary { background: rgba(255, 255, 255, 0.3); }
+.question-index { color: var(--orange-deep); font-family: var(--font-display); font-size: 25px; line-height: 1; }
+.answers-list summary strong { font-size: 14px; line-height: 1.4; }
+.detail-toggle { position: relative; width: 20px; height: 20px; justify-self: end; }
+.detail-toggle::before,
+.detail-toggle::after { content: ""; position: absolute; left: 50%; top: 50%; width: 14px; height: 1px; background: var(--ink); transform: translate(-50%, -50%); transition: transform 180ms ease; }
+.detail-toggle::after { transform: translate(-50%, -50%) rotate(90deg); }
+.answers-list details[open] .detail-toggle::after { transform: translate(-50%, -50%) rotate(0deg); }
+.answer-body { max-width: 96ch; padding: 0 64px 30px 84px; color: var(--ink-soft); font-size: 13px; }
+.answer-body p { margin: 0; }
+.answer-body p + p { margin-top: 14px; }
+.answer-body ul,
+.answer-body ol { margin: 18px 0; padding-left: 20px; }
+.answer-body li + li { margin-top: 8px; }
+.estimate-row { margin-bottom: 18px; display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.estimate-row p { min-height: 94px; padding: 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.estimate-row b,
+.estimate-row span { display: block; }
+.estimate-row b { color: var(--ink); font-family: var(--font-display); font-size: 21px; }
+.estimate-row span { margin-top: 8px; font-size: 11px; font-weight: 700; }
+.answer-note { padding-top: 16px; border-top: 1px solid var(--line); font-size: 11px; font-weight: 600; }
+
 .closing {
   padding: clamp(68px, 9vw, 124px) max(32px, calc((100vw - min(1440px, calc(100vw - 64px))) / 2));
   display: grid;
@@ -510,6 +541,15 @@ footer p { max-width: 62ch; margin: 0; }
   .console-flow i { width: 20px; }
   .delivery-plan { grid-template-columns: 1fr; }
   .delivery-plan li { min-height: 215px; padding: 22px; }
+  .application-answers { margin-top: 38px; }
+  .answers-heading { padding: 30px 0 22px; grid-template-columns: 1fr; gap: 12px; }
+  .answers-heading h3 { font-size: 34px; }
+  .answers-list summary { min-height: 72px; padding: 0 10px; grid-template-columns: 34px 1fr 22px; gap: 10px; }
+  .question-index { font-size: 21px; }
+  .answers-list summary strong { font-size: 12px; }
+  .answer-body { padding: 0 12px 24px 54px; font-size: 12px; }
+  .estimate-row { grid-template-columns: 1fr; }
+  .estimate-row p { min-height: 82px; }
   .closing { padding: 58px 18px; grid-template-columns: 1fr; gap: 34px; }
   footer { padding: 28px 18px; display: grid; }
 }
@@ -540,5 +580,8 @@ footer p { max-width: 62ch; margin: 0; }
   .evidence-lead > p, .evidence-list p, .section-heading.inverse > p, .console-grid small, footer { color: #444; }
   .delivery-plan { grid-template-columns: repeat(3, 1fr); }
   .delivery-plan li { min-height: 300px; break-inside: avoid; }
+  .application-answers details:not([open]) > :not(summary) { display: block !important; }
+  .application-answers details { break-inside: avoid; }
+  .detail-toggle { display: none; }
   .closing { grid-template-columns: 1fr 1fr; background: #eee; }
 }

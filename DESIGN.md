@@ -103,6 +103,15 @@ components:
     textColor: "{colors.control-ink-soft}"
     padding: "32px"
     height: "270px"
+  application-answer-row:
+    backgroundColor: "transparent"
+    textColor: "{colors.control-ink}"
+    padding: "0 18px"
+    height: "76px"
+  application-answer-body:
+    backgroundColor: "transparent"
+    textColor: "{colors.control-ink-soft}"
+    padding: "0 64px 30px 84px"
 ---
 
 # Design System: Vietnam Procurement Control Ledger
@@ -113,7 +122,7 @@ components:
 
 The proposal treats procurement as an operating system recorded in a working control ledger, not as an isolated spreadsheet or a generic applicant profile. Warm paper, warehouse-control ink, safety-orange decisions, ruled cells, and instrument labels make the page feel authored for purchasing work: practical, auditable, and implementation-led.
 
-Editorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface pairs a compact implementation thesis with an interactive Supplier → RFQ → PO → DC → KPI control sheet, then extends that same grammar through short system cells, evidence registers, a dense dark builder console, phased delivery records, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.
+Editorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface opens with the project-led declaration “A procurement system grounded in operational reality,” paired with an interactive Supplier → RFQ → PO → DC → KPI control sheet. That same grammar extends through short system cells, evidence registers, a dense dark builder console, phased delivery records, five ruled application-answer disclosures, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.
 
 **Key Characteristics:**
 
@@ -165,7 +174,7 @@ The palette combines warm archival paper with dark green-black control surfaces,
 
 ### Hierarchy
 
-- **Display** (500, `clamp(46px, 5vw, 74px)`, 0.94): The compact first-viewport implementation thesis; mobile uses a shorter `41px–58px` range.
+- **Display** (500, `clamp(46px, 5vw, 74px)`, 0.94): The compact, project-led “A procurement system grounded in operational reality” declaration; mobile uses a shorter `41px–58px` range.
 - **Headline** (500, `clamp(38px, 4.5vw, 64px)`, 0.98): Section declarations and the closing proposition, deliberately capped below the hero.
 - **Title** (600, `28px`, 1): Blueprint steps; delivery phases use `31px`, while evidence titles scale only where operating proof leads.
 - **Body** (400, `16px`, 1.65): Proposal explanation and evidence, with dense cell copy stepping down to `12px–13px`.
@@ -179,9 +188,9 @@ The palette combines warm archival paper with dark green-black control surfaces,
 
 The desktop shell is capped at `1440px` with `32px` viewport gutters through `min(1440px, calc(100vw - 64px))`. The header is a compact `72px` centered three-part register: identity left, proposal navigation center, and the print control right. The hero no longer forces a full viewport; it uses `48px–76px` vertical padding, a `1.05fr / 0.95fr` split, and a `40px–72px` gap so the thesis and rotated control sheet remain decisive without manufacturing empty height. Hero lead, action, and availability gaps resolve at `22px`, `26px`, and `22px`.
 
-Sections use a tighter `64px–108px` vertical cadence, with `44px` between a section heading and its records. Reusable structures include a two-column section heading, a three-column process matrix of `270px` cells, a `1.2fr / 0.8fr` evidence register, a `0.75fr / 1.25fr` builder proof split, and a three-column delivery ledger. The closing field contracts to `68px–124px` vertical padding. Shared borders and zero-gap grids preserve the connected-record reading while materially reducing total page height.
+Sections use a tighter `64px–108px` vertical cadence, with `44px` between a section heading and its records. Reusable structures include a two-column section heading, a three-column process matrix of `270px` cells, a `1.2fr / 0.8fr` evidence register, a `0.75fr / 1.25fr` builder proof split, a three-column delivery ledger, and five native disclosure rows placed `52px` below that delivery ledger. The closing field contracts to `68px–124px` vertical padding. Shared borders and zero-gap grids preserve the connected-record reading while materially reducing total page height.
 
-At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the hero uses `42px` vertical padding, the control chain becomes five rectangular stage buttons, and the process ledger deliberately remains two columns with `228px` cells and hidden output chips. The evidence register stacks but its supporting records compress to `165px`; the builder console keeps a two-column `108px` grid; delivery records stack at `215px`; and the closing field uses `58px` vertical padding. The save control becomes icon-only and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, and compacts the proposal into a legible document.
+At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the hero uses `42px` vertical padding, the control chain becomes five rectangular stage buttons, and the process ledger deliberately remains two columns with `228px` cells and hidden output chips. The evidence register stacks but its supporting records compress to `165px`; the builder console keeps a two-column `108px` grid; delivery records stack at `215px`; and the closing field uses `58px` vertical padding. Application answers move to a single-column heading, `72px` summary rows, `12px` body type, and a `54px` left answer inset; the two estimate records stack from two columns to one. The save control becomes icon-only and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, expands every application answer even when its native disclosure is closed, and compacts the proposal into a legible document.
 
 ## Elevation & Depth
 
@@ -250,9 +259,17 @@ The private-system proof uses a near-black operations console with compact `118p
 
 Three `310px` desktop phases connect paid discovery, working foundation, and pilot handover in one ruled row. Each record uses a large Newsreader index, teal phase label, compact explanation, and bottom-aligned output. Mobile stacks the sequence but reduces each phase to `215px`, preserving the implementation path while controlling page length.
 
+### Application Answers
+
+Five native named `<details>` records sit directly beneath the delivery plan so the required application responses remain part of the same ledger rather than becoming a separate FAQ card stack. Every row is collapsed initially; the shared `name="application-answer"` gives the group native single-open behavior without custom JavaScript. Each `76px` summary uses a `48px / 1fr / 28px` grid for its Newsreader question index, `14px` bold question, and CSS-only plus/minus. Opening a row rotates the vertical stroke to horizontal and applies the same lightly lifted paper tone used on hover.
+
+Answer bodies use a readable `96ch` maximum, `13px` Manrope text, and `0 64px 30px 84px` padding so copy aligns under the question rather than its index. The sourcing estimate is a ruled two-column record with `94px` minimum cells, `18px` padding, `21px` Newsreader material names, and compact bold timing lines. Below `780px`, summaries tighten to a `34px / 1fr / 22px` grid, answer padding becomes `0 12px 24px 54px`, body copy becomes `12px`, and the estimate stacks to one column with `82px` minimum cells. Print forces closed answer content to display and avoids splitting disclosure records across pages.
+
 ### Named Rules
 
 **The Static Truth Rule.** Interaction may reveal stage detail or reading progress, but all claims, evidence, and delivery commitments must remain understandable without motion and printable without dark-background dependence.
+
+**The Native Disclosure Rule.** Application answers use named HTML disclosure elements for one-open-at-a-time behavior; do not replace their native keyboard semantics with a custom accordion script.
 
 ## Do's and Don'ts
 
@@ -264,6 +281,7 @@ Three `310px` desktop phases connect paid discovery, working foundation, and pil
 - **Do** keep the Supplier → RFQ → PO → DC → KPI chain as the reusable visual model for procurement flow.
 - **Do** preserve the responsive and print transformations so the proposal remains useful in short desktop, mobile, and PDF reviews.
 - **Do** keep the visual distinction between verified evidence, proposed system controls, and phased delivery outputs.
+- **Do** keep application answers in five ruled native disclosure rows and expand all answer content for print.
 
 ### Don't:
 
@@ -273,3 +291,4 @@ Three `310px` desktop phases connect paid discovery, working foundation, and pil
 - **Don't** round every record; square shared boundaries are central to the operating-ledger language.
 - **Don't** rely on hover, animation, or the interactive chain to carry information that is absent from the document.
 - **Don't** introduce unsupported supplier, savings, negotiation, or procurement-performance claims into visual examples.
+- **Don't** convert the application answers into floating FAQ cards or allow multiple named disclosure rows to remain open together.

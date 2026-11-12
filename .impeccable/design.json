@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-12T11:25:51Z",
+  "generatedAt": "2026-11-12T11:42:51Z",
   "title": "Design System: Vietnam Procurement Control Ledger",
   "extensions": {
     "colorMeta": {
@@ -18,7 +18,7 @@
       "on-orange": { "role": "neutral", "displayName": "On-Orange Ink", "canonical": "#210b05", "tonalRamp": ["oklch(15% 0.04 35)", "oklch(27% 0.04 35)", "oklch(38% 0.04 35)", "oklch(50% 0.04 35)", "oklch(61% 0.04 35)", "oklch(73% 0.04 35)", "oklch(84% 0.04 35)", "oklch(95% 0.04 35)"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "Compact first-viewport implementation thesis.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
+      "display": { "displayName": "Display", "purpose": "Project-led declaration: A procurement system grounded in operational reality.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
       "headline": { "displayName": "Headline", "purpose": "Section declarations and the closing proposition.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
       "title": { "displayName": "Record Title", "purpose": "Blueprint, evidence, and delivery record titles.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
       "body": { "displayName": "Body", "purpose": "Proposal explanation, evidence, and system detail.", "assetDelivery": "Manrope ships as local WOFF2 through @fontsource/manrope and Vite.", "weights": [400, 500, 600, 700] },
@@ -39,9 +39,9 @@
       "css": ".ds-btn-primary { min-height: 50px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--orange); border-radius: 8px; background: var(--orange); color: #210b05; font-family: var(--font-body); font-size: 12px; font-weight: 700; text-decoration: none; transition: transform 180ms ease, background 180ms ease, border-color 180ms ease; } .ds-btn-primary:hover { background: #ff7049; border-color: #ff7049; transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; } .ds-btn-primary:active { transform: translateY(0); }"
     },
     {
-      "name": "Secondary Button", "kind": "button", "refersTo": "button-secondary", "description": "Outlined evidence route that reverses to warehouse ink on hover.",
-      "html": "<a class=\"ds-btn-secondary\" href=\"#evidence\">Verify the experience</a>",
-      "css": ".ds-btn-secondary { min-height: 50px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--ink); border-radius: 8px; background: transparent; color: var(--ink); font-family: var(--font-body); font-size: 12px; font-weight: 700; text-decoration: none; transition: transform 180ms ease, background 180ms ease, color 180ms ease; } .ds-btn-secondary:hover { background: var(--ink); color: var(--white); transform: translateY(-2px); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; } .ds-btn-secondary:active { transform: translateY(0); }"
+      "name": "Application Answers", "kind": "custom", "refersTo": "application-answer-row", "description": "Five native named disclosures with single-open behavior, ruled summaries, compact answers, and print expansion.",
+      "html": "<section class=\"ds-answers\"><details name=\"ds-application-answer\"><summary><span class=\"ds-question-index\">01</span><strong>Describe a supplier negotiation you handled and the result.</strong><span class=\"ds-detail-toggle\" aria-hidden=\"true\"></span></summary><div class=\"ds-answer-body\"><p>Operational data, non-negotiable requirements, trade-offs, ownership, and escalation rules shaped a controlled ramp-up with service continuity.</p></div></details><details name=\"ds-application-answer\"><summary><span class=\"ds-question-index\">05</span><strong>How long would sourcing three suppliers and requesting samples take?</strong><span class=\"ds-detail-toggle\" aria-hidden=\"true\"></span></summary><div class=\"ds-answer-body\"><div class=\"ds-estimate-row\"><p><b>Sodium Coco-Sulfate</b><span>6–8 active hours · 2–4 business days</span></p><p><b>Lactobacillus</b><span>14–20 active hours · 5–10 business days</span></p></div></div></details></section>",
+      "css": ".ds-answers { border-top:1px solid var(--line); color:var(--ink); font-family:var(--font-body); } .ds-answers details { border-bottom:1px solid var(--line); } .ds-answers summary { min-height:76px; padding:0 18px; display:grid; grid-template-columns:48px 1fr 28px; gap:18px; align-items:center; list-style:none; cursor:pointer; transition:background 180ms ease; } .ds-answers summary::-webkit-details-marker { display:none; } .ds-answers summary:hover,.ds-answers details[open] summary { background:rgba(255,255,255,.3); } .ds-question-index { color:var(--orange-deep); font-family:var(--font-display); font-size:25px; line-height:1; } .ds-answers summary strong { font-size:14px; line-height:1.4; } .ds-detail-toggle { position:relative; width:20px; height:20px; justify-self:end; } .ds-detail-toggle::before,.ds-detail-toggle::after { content:\"\"; position:absolute; left:50%; top:50%; width:14px; height:1px; background:var(--ink); transform:translate(-50%,-50%); transition:transform 180ms ease; } .ds-detail-toggle::after { transform:translate(-50%,-50%) rotate(90deg); } .ds-answers details[open] .ds-detail-toggle::after { transform:translate(-50%,-50%) rotate(0); } .ds-answer-body { max-width:96ch; padding:0 64px 30px 84px; color:var(--ink-soft); font-size:13px; } .ds-answer-body p { margin:0; } .ds-estimate-row { margin-bottom:18px; display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); } .ds-estimate-row p { min-height:94px; padding:18px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); } .ds-estimate-row b,.ds-estimate-row span { display:block; } .ds-estimate-row b { font-family:var(--font-display); font-size:21px; } .ds-estimate-row span { margin-top:8px; font-size:11px; font-weight:700; } .ds-answers summary:focus-visible { outline:3px solid var(--focus); outline-offset:-3px; } @media(max-width:780px){ .ds-answers summary { min-height:72px; padding:0 10px; grid-template-columns:34px 1fr 22px; gap:10px; } .ds-question-index { font-size:21px; } .ds-answers summary strong { font-size:12px; } .ds-answer-body { padding:0 12px 24px 54px; font-size:12px; } .ds-estimate-row { grid-template-columns:1fr; } .ds-estimate-row p { min-height:82px; } } @media print { .ds-answers details:not([open])>:not(summary) { display:block !important; } .ds-answers details { break-inside:avoid; } }"
     },
     {
       "name": "Print Control", "kind": "button", "refersTo": "print-control", "description": "Compact save-as-PDF utility that becomes icon-only on mobile.",
@@ -86,7 +86,7 @@
   ],
   "narrative": {
     "northStar": "Procurement Control Ledger",
-    "overview": "The proposal treats procurement as an operating system recorded in a working control ledger, not as an isolated spreadsheet or a generic applicant profile. Warm paper, warehouse-control ink, safety-orange decisions, ruled cells, and instrument labels make the page feel authored for purchasing work: practical, auditable, and implementation-led.\n\nEditorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface pairs a compact implementation thesis with an interactive Supplier → RFQ → PO → DC → KPI control sheet, then extends that same grammar through short system cells, evidence registers, a dense dark builder console, phased delivery records, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.",
+    "overview": "The proposal treats procurement as an operating system recorded in a working control ledger, not as an isolated spreadsheet or a generic applicant profile. Warm paper, warehouse-control ink, safety-orange decisions, ruled cells, and instrument labels make the page feel authored for purchasing work: practical, auditable, and implementation-led.\n\nEditorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface opens with the project-led declaration “A procurement system grounded in operational reality,” paired with an interactive Supplier → RFQ → PO → DC → KPI control sheet. That same grammar extends through short system cells, evidence registers, a dense dark builder console, phased delivery records, five ruled application-answer disclosures, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.",
     "keyCharacteristics": [
       "Warm ledger-paper ground with warehouse-green control ink",
       "Safety orange reserved for decisions, progress, evidence, and conversion",
@@ -101,7 +101,8 @@
       { "name": "The Editorial-to-Instrument Rule", "body": "Newsreader makes the argument; Manrope operates the system. Never set long process explanations in the display face or let micro-labels become the primary reading voice.", "section": "typography" },
       { "name": "The Register Before Elevation Rule", "body": "Establish hierarchy with rules, tonal fields, and connected cells before adding shadow; only a discrete working artifact may lift off the ledger.", "section": "elevation" },
       { "name": "The Functional Radius Rule", "body": "Curves identify controls, stage nodes, or the project mark; operating records remain square so their shared boundaries stay visible.", "section": "shapes" },
-      { "name": "The Static Truth Rule", "body": "Interaction may reveal stage detail or reading progress, but all claims, evidence, and delivery commitments must remain understandable without motion and printable without dark-background dependence.", "section": "components" }
+      { "name": "The Static Truth Rule", "body": "Interaction may reveal stage detail or reading progress, but all claims, evidence, and delivery commitments must remain understandable without motion and printable without dark-background dependence.", "section": "components" },
+      { "name": "The Native Disclosure Rule", "body": "Application answers use named HTML disclosure elements for one-open-at-a-time behavior; do not replace their native keyboard semantics with a custom accordion script.", "section": "components" }
     ],
     "dos": [
       "Do reserve safety orange for decisions, progress, verified scale, and primary actions.",
@@ -109,7 +110,8 @@
       "Do pair large Newsreader declarations with precise Manrope process detail.",
       "Do keep the Supplier → RFQ → PO → DC → KPI chain as the reusable visual model for procurement flow.",
       "Do preserve the responsive and print transformations so the proposal remains useful in short desktop, mobile, and PDF reviews.",
-      "Do keep the visual distinction between verified evidence, proposed system controls, and phased delivery outputs."
+      "Do keep the visual distinction between verified evidence, proposed system controls, and phased delivery outputs.",
+      "Do keep application answers in five ruled native disclosure rows and expand all answer content for print."
     ],
     "donts": [
       "Don't replace the ledger matrices with floating rounded SaaS cards or a generic applicant-profile grid.",
@@ -117,7 +119,8 @@
       "Don't add shadow to ordinary process cells, evidence rows, or delivery phases.",
       "Don't round every record; square shared boundaries are central to the operating-ledger language.",
       "Don't rely on hover, animation, or the interactive chain to carry information that is absent from the document.",
-      "Don't introduce unsupported supplier, savings, negotiation, or procurement-performance claims into visual examples."
+      "Don't introduce unsupported supplier, savings, negotiation, or procurement-performance claims into visual examples.",
+      "Don't convert the application answers into floating FAQ cards or allow multiple named disclosure rows to remain open together."
     ]
   }
 }

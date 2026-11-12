@@ -45,6 +45,8 @@ and a bounded implementation approach.
 - No claim of owning a supplier network, negotiating savings, or leading procurement unless it is
   supported by supplied evidence.
 - Proposed workflow is an initial plan to be confirmed during a paid discovery phase.
+- Five client application questions are answered in collapsed, accessible sections below the
+  delivery plan so the page remains compact while detailed responses stay available.
 - Static production output, deployed through Git, Docker, Nginx, and the existing VPS gateway.
 
 ## Brand Commitments
