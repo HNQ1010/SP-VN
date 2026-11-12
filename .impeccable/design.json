@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T11:25:51Z",
+  "title": "Design System: Vietnam Procurement Control Ledger",
+  "extensions": {
+    "colorMeta": {
+      "ledger-paper": { "role": "neutral", "displayName": "Ledger Paper", "canonical": "#f2efe7", "tonalRamp": ["oklch(15% 0.02 90)", "oklch(27% 0.02 90)", "oklch(38% 0.02 90)", "oklch(50% 0.02 90)", "oklch(61% 0.02 90)", "oklch(73% 0.02 90)", "oklch(84% 0.02 90)", "oklch(95% 0.02 90)"] },
+      "ledger-paper-deep": { "role": "neutral", "displayName": "Deep Ledger Paper", "canonical": "#e7e1d4", "tonalRamp": ["oklch(15% 0.025 80)", "oklch(27% 0.025 80)", "oklch(38% 0.025 80)", "oklch(50% 0.025 80)", "oklch(61% 0.025 80)", "oklch(73% 0.025 80)", "oklch(84% 0.025 80)", "oklch(95% 0.025 80)"] },
+      "control-ink": { "role": "neutral", "displayName": "Warehouse Control Ink", "canonical": "#102522", "tonalRamp": ["oklch(15% 0.03 175)", "oklch(27% 0.03 175)", "oklch(38% 0.03 175)", "oklch(50% 0.03 175)", "oklch(61% 0.03 175)", "oklch(73% 0.03 175)", "oklch(84% 0.03 175)", "oklch(95% 0.03 175)"] },
+      "control-ink-soft": { "role": "neutral", "displayName": "Control Ink Soft", "canonical": "#40504d", "tonalRamp": ["oklch(15% 0.025 175)", "oklch(27% 0.025 175)", "oklch(38% 0.025 175)", "oklch(50% 0.025 175)", "oklch(61% 0.025 175)", "oklch(73% 0.025 175)", "oklch(84% 0.025 175)", "oklch(95% 0.025 175)"] },
+      "control-ink-faint": { "role": "neutral", "displayName": "Control Ink Faint", "canonical": "#687571", "tonalRamp": ["oklch(15% 0.02 175)", "oklch(27% 0.02 175)", "oklch(38% 0.02 175)", "oklch(50% 0.02 175)", "oklch(61% 0.02 175)", "oklch(73% 0.02 175)", "oklch(84% 0.02 175)", "oklch(95% 0.02 175)"] },
+      "rule-line": { "role": "neutral", "displayName": "Rule Line", "canonical": "rgba(16, 37, 34, 0.18)", "tonalRamp": ["oklch(15% 0.03 175 / 0.18)", "oklch(27% 0.03 175 / 0.18)", "oklch(38% 0.03 175 / 0.18)", "oklch(50% 0.03 175 / 0.18)", "oklch(61% 0.03 175 / 0.18)", "oklch(73% 0.03 175 / 0.18)", "oklch(84% 0.03 175 / 0.18)", "oklch(95% 0.03 175 / 0.18)"] },
+      "decision-orange": { "role": "primary", "displayName": "Safety Decision Orange", "canonical": "#f05a32", "tonalRamp": ["oklch(15% 0.17 35)", "oklch(27% 0.17 35)", "oklch(38% 0.17 35)", "oklch(50% 0.17 35)", "oklch(61% 0.17 35)", "oklch(73% 0.17 35)", "oklch(84% 0.17 35)", "oklch(95% 0.17 35)"] },
+      "decision-orange-hover": { "role": "primary", "displayName": "Active Decision Tint", "canonical": "#ff7049", "tonalRamp": ["oklch(15% 0.16 38)", "oklch(27% 0.16 38)", "oklch(38% 0.16 38)", "oklch(50% 0.16 38)", "oklch(61% 0.16 38)", "oklch(73% 0.16 38)", "oklch(84% 0.16 38)", "oklch(95% 0.16 38)"] },
+      "decision-orange-deep": { "role": "primary", "displayName": "Deep Decision Orange", "canonical": "#c84222", "tonalRamp": ["oklch(15% 0.16 35)", "oklch(27% 0.16 35)", "oklch(38% 0.16 35)", "oklch(50% 0.16 35)", "oklch(61% 0.16 35)", "oklch(73% 0.16 35)", "oklch(84% 0.16 35)", "oklch(95% 0.16 35)"] },
+      "operations-teal": { "role": "secondary", "displayName": "Operations Teal", "canonical": "#0c6d64", "tonalRamp": ["oklch(15% 0.09 180)", "oklch(27% 0.09 180)", "oklch(38% 0.09 180)", "oklch(50% 0.09 180)", "oklch(61% 0.09 180)", "oklch(73% 0.09 180)", "oklch(84% 0.09 180)", "oklch(95% 0.09 180)"] },
+      "document-white": { "role": "neutral", "displayName": "Document White", "canonical": "#fffdf8", "tonalRamp": ["oklch(15% 0.01 85)", "oklch(27% 0.01 85)", "oklch(38% 0.01 85)", "oklch(50% 0.01 85)", "oklch(61% 0.01 85)", "oklch(73% 0.01 85)", "oklch(84% 0.01 85)", "oklch(95% 0.01 85)"] },
+      "on-orange": { "role": "neutral", "displayName": "On-Orange Ink", "canonical": "#210b05", "tonalRamp": ["oklch(15% 0.04 35)", "oklch(27% 0.04 35)", "oklch(38% 0.04 35)", "oklch(50% 0.04 35)", "oklch(61% 0.04 35)", "oklch(73% 0.04 35)", "oklch(84% 0.04 35)", "oklch(95% 0.04 35)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Compact first-viewport implementation thesis.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
+      "headline": { "displayName": "Headline", "purpose": "Section declarations and the closing proposition.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
+      "title": { "displayName": "Record Title", "purpose": "Blueprint, evidence, and delivery record titles.", "assetDelivery": "Newsreader ships as local WOFF2 through @fontsource/newsreader and Vite.", "weights": [500, 600] },
+      "body": { "displayName": "Body", "purpose": "Proposal explanation, evidence, and system detail.", "assetDelivery": "Manrope ships as local WOFF2 through @fontsource/manrope and Vite.", "weights": [400, 500, 600, 700] },
+      "label": { "displayName": "Instrument Label", "purpose": "Version labels, step codes, state, and metadata.", "assetDelivery": "Manrope ships as local WOFF2 through @fontsource/manrope and Vite.", "weights": [400, 500, 600, 700] }
+    },
+    "shadows": [{ "name": "ledger-lift", "value": "0 22px 54px rgba(36, 39, 32, 0.13)", "purpose": "Separates only the procurement control sheet and private-system console from the ledger." }],
+    "motion": [
+      { "name": "control-fast", "value": "180ms ease", "purpose": "Buttons, nodes, links, and focus-adjacent state changes." },
+      { "name": "record-reveal", "value": "520ms cubic-bezier(.22, 1, .36, 1)", "purpose": "Single entrance for proposal records as they enter view." },
+      { "name": "reduced-motion-override", "value": "0.01ms", "purpose": "Collapses animation and transitions when reduced motion is requested." }
+    ],
+    "breakpoints": [{ "name": "compact", "value": "1100px" }, { "name": "mobile", "value": "780px" }, { "name": "print", "value": "print" }]
+  },
+  "components": [
+    {
+      "name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "Safety-orange action for system review and proposal conversion.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#system\">Review the system plan</a>",
+      "css": ".ds-btn-primary { min-height: 50px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--orange); border-radius: 8px; background: var(--orange); color: #210b05; font-family: var(--font-body); font-size: 12px; font-weight: 700; text-decoration: none; transition: transform 180ms ease, background 180ms ease, border-color 180ms ease; } .ds-btn-primary:hover { background: #ff7049; border-color: #ff7049; transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; } .ds-btn-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Secondary Button", "kind": "button", "refersTo": "button-secondary", "description": "Outlined evidence route that reverses to warehouse ink on hover.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#evidence\">Verify the experience</a>",
+      "css": ".ds-btn-secondary { min-height: 50px; padding: 0 20px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--ink); border-radius: 8px; background: transparent; color: var(--ink); font-family: var(--font-body); font-size: 12px; font-weight: 700; text-decoration: none; transition: transform 180ms ease, background 180ms ease, color 180ms ease; } .ds-btn-secondary:hover { background: var(--ink); color: var(--white); transform: translateY(-2px); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; } .ds-btn-secondary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Print Control", "kind": "button", "refersTo": "print-control", "description": "Compact save-as-PDF utility that becomes icon-only on mobile.",
+      "html": "<button class=\"ds-print\" type=\"button\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z\"/></svg><span>Save as PDF</span></button>",
+      "css": ".ds-print { min-height: 44px; padding: 0 16px; display: inline-flex; align-items: center; gap: 9px; color: var(--ink); border: 1px solid var(--line); background: rgba(255,255,255,.28); border-radius: 8px; font-family: var(--font-body); font-size: 12px; font-weight: 700; cursor: pointer; transition: background 180ms ease, border-color 180ms ease, transform 180ms ease; } .ds-print svg { width: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; } .ds-print:hover { background: var(--white); border-color: var(--ink); transform: translateY(-2px); } .ds-print:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; } .ds-print:active { transform: translateY(0); } @media(max-width:780px){ .ds-print { width:44px; padding:0; justify-content:center; } .ds-print span { display:none; } }"
+    },
+    {
+      "name": "Proposal Navigation", "kind": "nav", "refersTo": "nav-link", "description": "Centered desktop route through system, evidence, and delivery.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Proposal navigation\"><a href=\"#system\">System</a><a href=\"#evidence\">Evidence</a><a href=\"#delivery\">Delivery</a></nav>",
+      "css": ".ds-nav { display:flex; align-items:center; gap:28px; } .ds-nav a { color:var(--ink); font-family:var(--font-body); font-size:12px; font-weight:700; text-decoration:none; } .ds-nav a:hover { color:var(--orange-deep); } .ds-nav a:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-nav a:active { color:var(--orange); } @media(max-width:1100px){ .ds-nav { display:none; } }"
+    },
+    {
+      "name": "Process Chip", "kind": "chip", "refersTo": "process-chip", "description": "Non-interactive deliverable label anchored at the bottom of a blueprint record.",
+      "html": "<span class=\"ds-chip\">Supplier master</span>",
+      "css": ".ds-chip { display:inline-flex; padding:5px 8px; border:1px solid var(--line); border-radius:5px; color:var(--ink); font-family:var(--font-body); font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }"
+    },
+    {
+      "name": "Procurement Chain Node", "kind": "button", "refersTo": "chain-node", "description": "Supplier-to-KPI stage control that reverses when active.",
+      "html": "<button class=\"ds-chain-node is-active\" type=\"button\"><span>Supplier</span><small>Source + qualify</small></button>",
+      "css": ".ds-chain-node { width:70px; min-height:70px; padding:8px; display:grid; align-content:center; color:var(--ink); border:1px solid var(--line); border-radius:50%; background:var(--paper); font-family:var(--font-body); cursor:pointer; transition:background 180ms ease,color 180ms ease,border-color 180ms ease,transform 180ms ease; } .ds-chain-node span { font-size:11px; font-weight:800; } .ds-chain-node small { margin-top:3px; opacity:.7; font-size:7px; line-height:1.25; } .ds-chain-node:hover { border-color:var(--teal); transform:translateY(-3px); } .ds-chain-node.is-active { background:var(--night); color:var(--white); border-color:var(--night); } .ds-chain-node:focus-visible { outline:3px solid var(--focus); outline-offset:4px; } .ds-chain-node:active { transform:translateY(0); } @media(max-width:780px){ .ds-chain-node { width:100%; min-height:56px; border-radius:7px; } .ds-chain-node small { display:none; } }"
+    },
+    {
+      "name": "Procurement Control Sheet", "kind": "custom", "refersTo": "ledger-sheet", "description": "Signature lifted ledger combining version labels, stage controls, and a dark active-detail field.",
+      "html": "<section class=\"ds-sheet\"><header><span>PROCUREMENT CONTROL PLAN</span><span>VERSION 01</span></header><div class=\"ds-sheet-detail\"><span>01 · SUPPLIER FOUNDATION</span><strong>One trusted supplier record.</strong><p>Qualification, terms, risk, capacity, and performance history in one maintainable structure.</p></div><footer><span>OWNER · NGUYEN QUOC HUNG</span><span>OUTPUT · WORKING SYSTEM + SOP</span></footer></section>",
+      "css": ".ds-sheet { position:relative; padding:22px; background:var(--white); border:1px solid rgba(16,37,34,.22); box-shadow:0 22px 54px rgba(36,39,32,.13); color:var(--ink); font-family:var(--font-body); transform:rotate(1.2deg); } .ds-sheet::before { content:\"\"; position:absolute; inset:10px; border:1px solid rgba(16,37,34,.08); pointer-events:none; } .ds-sheet header,.ds-sheet footer { position:relative; display:flex; justify-content:space-between; gap:20px; color:var(--ink-faint); font-size:9px; font-weight:700; letter-spacing:.13em; } .ds-sheet header { padding-bottom:18px; border-bottom:1px solid var(--line); } .ds-sheet footer { padding-top:16px; border-top:1px solid var(--line); } .ds-sheet-detail { position:relative; min-height:175px; margin:22px 0 18px; padding:22px; display:flex; flex-direction:column; justify-content:flex-end; background:var(--night); color:var(--white); } .ds-sheet-detail span { color:#8fc9bd; font-size:9px; font-weight:700; letter-spacing:.13em; } .ds-sheet-detail strong { margin-top:18px; font-family:var(--font-display); font-size:clamp(27px,3vw,38px); font-weight:500; line-height:1; } .ds-sheet-detail p { max-width:54ch; margin:14px 0 0; color:#c3cfca; font-size:12px; }"
+    },
+    {
+      "name": "Blueprint Record", "kind": "card", "refersTo": "process-cell", "description": "Compact ruled process cell sized to 270px on desktop and 228px in the two-column mobile ledger.",
+      "html": "<article class=\"ds-blueprint\"><span>A · FOUNDATION</span><h3>Supplier master &amp; qualification</h3><p>Supplier profiles, capabilities, terms, risk flags, and onboarding status.</p><div><i>Supplier master</i><i>Qualification checklist</i></div></article>",
+      "css": ".ds-blueprint { min-height:270px; padding:26px; display:flex; flex-direction:column; border:1px solid var(--line); color:var(--ink); font-family:var(--font-body); } .ds-blueprint>span { color:var(--teal); font-size:9px; font-weight:800; letter-spacing:.13em; } .ds-blueprint h3 { max-width:14ch; margin:30px 0 12px; font-family:var(--font-display); font-size:28px; line-height:1; font-weight:600; letter-spacing:-.03em; } .ds-blueprint p { margin:0; color:var(--ink-soft); font-size:13px; } .ds-blueprint div { margin:auto 0 0; padding-top:14px; display:flex; flex-wrap:wrap; gap:6px; } .ds-blueprint i { padding:5px 8px; border:1px solid var(--line); border-radius:5px; font-size:9px; font-style:normal; font-weight:700; text-transform:uppercase; letter-spacing:.06em; } .ds-blueprint:hover { background:rgba(255,255,255,.28); } .ds-blueprint:focus-within { outline:3px solid var(--focus); outline-offset:-3px; } @media(max-width:780px){ .ds-blueprint { min-height:228px; padding:18px; } .ds-blueprint h3 { margin-top:22px; font-size:22px; } .ds-blueprint p { font-size:12px; line-height:1.5; } .ds-blueprint div { display:none; } }"
+    },
+    {
+      "name": "Evidence Lead Record", "kind": "card", "refersTo": "evidence-lead", "description": "Compact dark register led by verified warehouse scale and operational relevance.",
+      "html": "<article class=\"ds-evidence\"><div class=\"ds-evidence-number\">~60,000 <small>m²</small></div><h3>3PL distribution center serving Central Retail Vietnam</h3><p>Managed ambient and cold-chain operations with 50+ staff and service continuity.</p><dl><div><dt>Daily scale</dt><dd>Up to 18,000 pallets</dd></div><div><dt>Throughput</dt><dd>~800 tons</dd></div></dl></article>",
+      "css": ".ds-evidence { min-height:500px; padding:clamp(32px,4vw,52px); display:flex; flex-direction:column; background:var(--night); color:var(--white); border:1px solid rgba(255,255,255,.18); font-family:var(--font-body); } .ds-evidence-number { color:var(--orange); font-family:var(--font-display); font-size:clamp(70px,9vw,140px); line-height:.8; letter-spacing:-.06em; } .ds-evidence-number small { font-size:.3em; letter-spacing:0; } .ds-evidence h3 { max-width:19ch; margin:34px 0 14px; font-family:var(--font-display); font-size:clamp(31px,3.4vw,48px); line-height:1; font-weight:500; } .ds-evidence>p { max-width:62ch; margin:0; color:#b8c7c2; } .ds-evidence dl { margin:auto 0 0; display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid rgba(255,255,255,.18); } .ds-evidence dl div { padding:22px 20px 0 0; } .ds-evidence dt { color:#87a49d; font-size:9px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; } .ds-evidence dd { margin:7px 0 0; font-size:12px; }"
+    },
+    {
+      "name": "Builder Console", "kind": "custom", "refersTo": "builder-console", "description": "Dense two-column proof of the maintained operations system, retained at mobile widths.",
+      "html": "<section class=\"ds-console\"><header><span>PRIVATE OPERATIONS SYSTEM</span><span>ACTIVE / MAINTAINED</span></header><div class=\"ds-console-grid\"><div><span>01</span><strong>Workforce</strong><small>Employee, shift, working time</small></div><div><span>02</span><strong>Operations</strong><small>Loading, vehicles, VAS records</small></div><div><span>03</span><strong>Capacity</strong><small>DC analysis, zone maps, planning</small></div><div><span>04</span><strong>Governance</strong><small>Access control, exports, deployment</small></div></div></section>",
+      "css": ".ds-console { background:#0a1c1a; color:var(--white); box-shadow:0 22px 54px rgba(36,39,32,.13); font-family:var(--font-body); } .ds-console header { padding:18px 22px; display:flex; justify-content:space-between; gap:20px; color:#78938c; border-bottom:1px solid rgba(255,255,255,.15); font-size:9px; font-weight:700; letter-spacing:.13em; } .ds-console-grid { display:grid; grid-template-columns:repeat(2,1fr); } .ds-console-grid div { min-height:118px; padding:20px; display:grid; grid-template-columns:auto 1fr; gap:2px 14px; align-content:center; border-right:1px solid rgba(255,255,255,.15); border-bottom:1px solid rgba(255,255,255,.15); } .ds-console-grid span { grid-row:span 2; color:var(--orange); font-family:var(--font-display); font-size:30px; } .ds-console-grid strong { font-size:14px; } .ds-console-grid small { color:#8ca29d; font-size:10px; } @media(max-width:780px){ .ds-console-grid div { min-height:108px; padding:14px; grid-template-columns:1fr; gap:3px; } .ds-console-grid span { grid-row:auto; font-size:24px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Procurement Control Ledger",
+    "overview": "The proposal treats procurement as an operating system recorded in a working control ledger, not as an isolated spreadsheet or a generic applicant profile. Warm paper, warehouse-control ink, safety-orange decisions, ruled cells, and instrument labels make the page feel authored for purchasing work: practical, auditable, and implementation-led.\n\nEditorial Newsreader headlines carry the proposal and evidence; Manrope handles the operational detail. The final distilled surface pairs a compact implementation thesis with an interactive Supplier → RFQ → PO → DC → KPI control sheet, then extends that same grammar through short system cells, evidence registers, a dense dark builder console, phased delivery records, and a print-safe document mode. Tighter section and closing rhythms reduce total page height without changing the ledger identity or evidence sequence.",
+    "keyCharacteristics": [
+      "Warm ledger-paper ground with warehouse-green control ink",
+      "Safety orange reserved for decisions, progress, evidence, and conversion",
+      "Editorial serif declarations paired with compact sans-serif instrument labels",
+      "Ruled matrices and registers instead of detached marketing cards",
+      "Interactive controls that remain complete as static content and in print",
+      "Responsive reduction that keeps high-value process and console records in two columns on mobile"
+    ],
+    "rules": [
+      { "name": "The Decision Signal Rule", "body": "Orange marks a choice, progress, verified scale, or the next action; it is never a general-purpose decoration.", "section": "colors" },
+      { "name": "The Ledger Contrast Rule", "body": "Paper and control-ink fields may alternate to establish chapters, but every field retains the same ruled, auditable visual language.", "section": "colors" },
+      { "name": "The Editorial-to-Instrument Rule", "body": "Newsreader makes the argument; Manrope operates the system. Never set long process explanations in the display face or let micro-labels become the primary reading voice.", "section": "typography" },
+      { "name": "The Register Before Elevation Rule", "body": "Establish hierarchy with rules, tonal fields, and connected cells before adding shadow; only a discrete working artifact may lift off the ledger.", "section": "elevation" },
+      { "name": "The Functional Radius Rule", "body": "Curves identify controls, stage nodes, or the project mark; operating records remain square so their shared boundaries stay visible.", "section": "shapes" },
+      { "name": "The Static Truth Rule", "body": "Interaction may reveal stage detail or reading progress, but all claims, evidence, and delivery commitments must remain understandable without motion and printable without dark-background dependence.", "section": "components" }
+    ],
+    "dos": [
+      "Do reserve safety orange for decisions, progress, verified scale, and primary actions.",
+      "Do structure related information with shared rules, aligned cells, and visible ownership labels.",
+      "Do pair large Newsreader declarations with precise Manrope process detail.",
+      "Do keep the Supplier → RFQ → PO → DC → KPI chain as the reusable visual model for procurement flow.",
+      "Do preserve the responsive and print transformations so the proposal remains useful in short desktop, mobile, and PDF reviews.",
+      "Do keep the visual distinction between verified evidence, proposed system controls, and phased delivery outputs."
+    ],
+    "donts": [
+      "Don't replace the ledger matrices with floating rounded SaaS cards or a generic applicant-profile grid.",
+      "Don't use orange as passive decoration until its decision-making meaning is diluted.",
+      "Don't add shadow to ordinary process cells, evidence rows, or delivery phases.",
+      "Don't round every record; square shared boundaries are central to the operating-ledger language.",
+      "Don't rely on hover, animation, or the interactive chain to carry information that is absent from the document.",
+      "Don't introduce unsupported supplier, savings, negotiation, or procurement-performance claims into visual examples."
+    ]
+  }
+}
