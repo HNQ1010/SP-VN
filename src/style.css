@@ -352,21 +352,21 @@ h1 em { color: var(--orange-deep); font-weight: 500; }
 .section-heading.inverse > p { color: #b8c7c2; }
 
 .evidence-map { display: grid; grid-template-columns: 1.2fr 0.8fr; border: 1px solid rgba(255, 255, 255, 0.18); }
-.evidence-lead { min-height: 430px; padding: clamp(28px, 3.2vw, 42px); display: flex; flex-direction: column; border-right: 1px solid rgba(255, 255, 255, 0.18); }
-.evidence-number { color: var(--orange); font-family: var(--font-display); font-size: clamp(60px, 7vw, 108px); line-height: 0.8; letter-spacing: -0.06em; }
+.evidence-lead { min-height: 380px; padding: clamp(24px, 2.5vw, 34px); display: flex; flex-direction: column; border-right: 1px solid rgba(255, 255, 255, 0.18); }
+.evidence-number { color: var(--orange); font-family: var(--font-display); font-size: clamp(50px, 5.5vw, 84px); line-height: 0.8; letter-spacing: -0.06em; }
 .evidence-number small { font-size: 0.3em; letter-spacing: 0; }
-.evidence-lead h3 { max-width: 19ch; margin: 28px 0 12px; font-family: var(--font-display); font-size: clamp(27px, 2.8vw, 40px); line-height: 1; font-weight: 500; }
+.evidence-lead h3 { max-width: 19ch; margin: 20px 0 10px; font-family: var(--font-display); font-size: clamp(24px, 2.2vw, 32px); line-height: 1; font-weight: 500; }
 .evidence-lead > p { max-width: 62ch; margin: 0; color: #b8c7c2; }
 .evidence-lead dl { margin: auto 0 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255, 255, 255, 0.18); }
-.evidence-lead dl div { padding: 22px 20px 0 0; }
+.evidence-lead dl div { padding: 16px 14px 0 0; }
 .evidence-lead dt { color: #87a49d; font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .evidence-lead dd { margin: 7px 0 0; font-size: 12px; }
 
 .evidence-list { display: grid; grid-template-rows: repeat(3, 1fr); }
-.evidence-list article { padding: clamp(20px, 2.5vw, 30px); display: flex; flex-direction: column; justify-content: center; }
+.evidence-list article { padding: clamp(16px, 1.8vw, 24px); display: flex; flex-direction: column; justify-content: center; }
 .evidence-list article + article { border-top: 1px solid rgba(255, 255, 255, 0.18); }
 .evidence-list span { color: #87a49d; font-size: 9px; font-weight: 800; letter-spacing: 0.13em; }
-.evidence-list h3 { margin: 14px 0 10px; font-family: var(--font-display); font-size: 25px; line-height: 1; font-weight: 500; }
+.evidence-list h3 { margin: 12px 0 8px; font-family: var(--font-display); font-size: 22px; line-height: 1; font-weight: 500; }
 .evidence-list p { margin: 0; color: #b8c7c2; font-size: 13px; }
 
 .local-advantage {
@@ -431,11 +431,11 @@ h1 em { color: var(--orange-deep); font-weight: 500; }
 .answers-list details[open] .detail-toggle::after { transform: translate(-50%, -50%) rotate(0deg); }
 .answer-body { max-width: 96ch; padding: 0 64px 30px 84px; color: var(--ink-soft); font-size: 13px; }
 .answer-body p { margin: 0; }
-.answer-body p + p { margin-top: 14px; }
+.answer-body > p + p { margin-top: 14px; }
 .answer-body ul,
 .answer-body ol { margin: 18px 0; padding-left: 20px; }
 .answer-body li + li { margin-top: 8px; }
-.estimate-row { margin-bottom: 18px; display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.estimate-row { margin-bottom: 18px; display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 1fr; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .estimate-row p { min-height: 94px; padding: 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .estimate-row b,
 .estimate-row span { display: block; }
@@ -524,10 +524,10 @@ footer p { max-width: 62ch; margin: 0; }
   .system-blueprint ul { display: none; }
   .blueprint-rail span { width: 50%; }
   .evidence-map { grid-template-columns: 1fr; }
-  .evidence-lead { min-height: 440px; padding: 26px 22px; border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.18); }
+  .evidence-lead { min-height: 390px; padding: 22px 20px; border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.18); }
   .evidence-lead dl { grid-template-columns: 1fr; }
-  .evidence-lead dl div { padding: 18px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
-  .evidence-list article { min-height: 135px; }
+  .evidence-lead dl div { padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+  .evidence-list article { min-height: 124px; }
   .local-advantage { grid-template-columns: 1fr; }
   .local-advantage > div { padding: 24px 22px; }
   .local-advantage > div + div { border-left: 0; border-top: 1px solid rgba(255, 255, 255, 0.18); }

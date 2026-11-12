@@ -177,8 +177,8 @@ The palette combines warm archival paper with dark green-black control surfaces,
 - **Display** (500, `clamp(38px, 4.2vw, 60px)`, 0.94): The calm, project-led “A procurement system grounded in operational reality” declaration; mobile uses `clamp(34px, 9.5vw, 46px)`.
 - **Headline** (500, `clamp(30px, 3.2vw, 46px)`, 0.98): Shared section, builder, and closing declarations; the builder proof alone lifts slightly to `clamp(32px, 3.5vw, 48px)`.
 - **Title** (600, `24px`, 1): Desktop blueprint steps; mobile reduces them to `20px`, while delivery phase titles use `26px`.
-- **Evidence Number** (500, `clamp(60px, 7vw, 108px)`, 0.8): Verified operating scale inside the dark evidence register.
-- **Evidence Title** (500, `clamp(27px, 2.8vw, 40px)`, 1): Lead evidence statement; local-advantage titles use the calmer `clamp(27px, 2.8vw, 38px)` endpoint.
+- **Evidence Number** (500, `clamp(50px, 5.5vw, 84px)`, 0.8): Verified operating scale inside the compact dark evidence register.
+- **Evidence Title** (500, `clamp(24px, 2.2vw, 32px)`, 1): Lead evidence statement; local-advantage titles retain the calmer `clamp(27px, 2.8vw, 38px)` endpoint.
 - **Answers Title** (500, `clamp(28px, 3vw, 40px)`, 0.98): Application-answer heading, fixed at `28px` on mobile.
 - **Body** (400, `16px`, 1.65): Proposal explanation and evidence, with dense cell copy stepping down to `12px–13px`.
 - **Label** (700–800, `8px–11px`, `0.08em–0.14em`, uppercase): Version labels, step codes, system state, metadata, and control headings.
@@ -193,7 +193,7 @@ The desktop shell is capped at `1440px` with `32px` viewport gutters through `mi
 
 Sections use a compact `48px–82px` vertical cadence, with `32px` between a section heading and its records. Reusable structures include a two-column section heading, a three-column process matrix of `235px` cells, a `1.2fr / 0.8fr` evidence register, a `0.75fr / 1.25fr` builder proof split, a three-column delivery ledger, and five native disclosure rows placed `40px` below that delivery ledger. The closing field uses `48px–84px` vertical padding and a tighter `44px–110px` column gap. Shared borders and zero-gap grids preserve the connected-record reading while materially reducing total page height.
 
-At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the hero uses `34px` vertical padding and a `30px` internal gap, and every section uses `44px` vertical padding. The control chain becomes five rectangular stage buttons, while the process ledger deliberately remains two columns with `198px` cells and hidden output chips. The evidence lead becomes `440px`, supporting records compress to `135px`, the builder console keeps a two-column `96px` grid, delivery records stack at `190px`, and the closing field uses `44px` vertical padding. Application answers move to a single-column heading, `66px` summary rows, `12px` body type, and a `54px` left answer inset; the two estimate records stack from two columns to one. The save control becomes icon-only and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, expands every application answer even when its native disclosure is closed, and compacts the proposal into a legible document.
+At `1100px`, the header navigation hides, the hero and builder proof become single-column, and the process matrix reduces to two columns. At `780px`, gutters narrow to `14px`, the hero uses `34px` vertical padding and a `30px` internal gap, and every section uses `44px` vertical padding. The control chain becomes five rectangular stage buttons, while the process ledger deliberately remains two columns with `198px` cells and hidden output chips. The evidence lead becomes `390px` with `22px 20px` padding, supporting records compress to `124px`, the builder console keeps a two-column `96px` grid, delivery records stack at `190px`, and the closing field uses `44px` vertical padding. Application answers move to a single-column heading, `66px` summary rows, `12px` body type, and a `54px` left answer inset; the two estimate records stack from two columns to one while preserving equal intrinsic row sizing. The save control becomes icon-only and the footer becomes a single-column record. Print mode removes navigation and interactive actions, flattens dark fields to white, expands every application answer even when its native disclosure is closed, and compacts the proposal into a legible document.
 
 ## Elevation & Depth
 
@@ -236,7 +236,7 @@ Components feel like purchasing controls and ledger entries: tactile enough to o
 - **Background:** Cells alternate between ledger paper, lightly lifted white, deep ledger paper, and warehouse-control ink according to chapter.
 - **Shadow Strategy:** Flat by default, following the Register Before Elevation Rule.
 - **Border:** One-pixel rules connect adjacent records; zero-gap grids preserve continuity.
-- **Internal Padding:** Compact controls use `13px–22px`; desktop process records use `22px`; lead evidence uses `28px–42px`; supporting evidence uses `20px–30px`; delivery records use `24px`.
+- **Internal Padding:** Compact controls use `13px–22px`; desktop process records use `22px`; lead evidence uses `24px–34px`; supporting evidence uses `16px–24px`; delivery records use `24px`.
 
 ### Navigation
 
@@ -252,7 +252,7 @@ Six `235px` desktop process cells share one ruled matrix and an orange progress 
 
 ### Evidence Register
 
-The evidence chapter reverses to warehouse-control ink. One compact `430px` lead record uses a `60px–108px` orange operating metric, a `27px–40px` lead title, and a three-column definition list; three adjacent records use `20px–30px` padding and `25px` titles for fulfillment, analytics, and high-volume proof. A ruled local-advantage register follows with `27px–38px` titles, separating direct evidence from transferable Vietnam procurement context. On mobile the lead becomes `440px`, supporting evidence compresses to `135px`, and local-advantage content stacks without abandoning its internal two-column list.
+The evidence chapter reverses to warehouse-control ink. One compact `380px` lead record uses `24px–34px` padding, a `50px–84px` orange operating metric, and a `24px–32px` lead title with a `20px 0 10px` margin. Its definition-list cells use `16px 14px 0` padding. Three adjacent records use `16px–24px` padding and `22px` titles for fulfillment, analytics, and high-volume proof. A ruled local-advantage register follows with `27px–38px` titles, separating direct evidence from transferable Vietnam procurement context. On mobile the lead becomes `390px` with `22px 20px` padding, definition cells use `14px 0`, supporting evidence compresses to `124px`, and local-advantage content stacks without abandoning its internal two-column list.
 
 ### Builder Console
 
@@ -266,7 +266,7 @@ Three `260px` desktop phases connect paid discovery, working foundation, and pil
 
 Five native named `<details>` records sit directly beneath the delivery plan so the required application responses remain part of the same ledger rather than becoming a separate FAQ card stack. Every row is collapsed initially; the shared `name="application-answer"` gives the group native single-open behavior without custom JavaScript. Each `68px` summary uses a `44px / 1fr / 28px` grid for its Newsreader question index, `14px` bold question, and CSS-only plus/minus. Opening a row rotates the vertical stroke to horizontal and applies the same lightly lifted paper tone used on hover.
 
-Answer bodies use a readable `96ch` maximum, `13px` Manrope text, and `0 64px 30px 84px` padding so copy aligns under the question rather than its index. The sourcing estimate is a ruled two-column record with `94px` minimum cells, `18px` padding, `21px` Newsreader material names, and compact bold timing lines. Below `780px`, summaries tighten to a `32px / 1fr / 22px` grid with `66px` height, answer padding becomes `0 12px 24px 54px`, body copy becomes `12px`, and the estimate stacks to one column with `82px` minimum cells. The answer-section title resolves to `28px` on mobile. Print forces closed answer content to display and avoids splitting disclosure records across pages.
+Answer bodies use a readable `96ch` maximum, `13px` Manrope text, and `0 64px 30px 84px` padding so copy aligns under the question rather than its index. Paragraph rhythm is scoped to direct answer paragraphs (`.answer-body > p + p`) so nested estimate records do not inherit unintended spacing. The sourcing estimate is a ruled two-column record with equal intrinsic rows (`grid-auto-rows: 1fr`), `94px` minimum cells, `18px` padding, `21px` Newsreader material names, and compact bold timing lines. Below `780px`, summaries tighten to a `32px / 1fr / 22px` grid with `66px` height, answer padding becomes `0 12px 24px 54px`, body copy becomes `12px`, and the estimate stacks to one column with `82px` minimum cells; equal grid rows keep both records balanced without fixed-height clipping. The answer-section title resolves to `28px` on mobile. Print forces closed answer content to display and avoids splitting disclosure records across pages.
 
 ### Named Rules
 
